@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alberto Agis Web - Presupuesto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ CSS CORRECTO -->
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Alberto Agis Web</div>
+    <ul>
+      <!-- ✅ RUTAS DESDE views -->
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Calcula tu presupuesto</h1>
+
+    <form id="form-presupuesto" novalidate>
+      <fieldset>
+        <legend>Datos de contacto</legend>
+
+        <label>Nombre
+          <input type="text" id="nombre" maxlength="15">
+          <span class="error" id="error-nombre"></span>
+        </label>
+
+        <label>Apellidos
+          <input type="text" id="apellidos" maxlength="40">
+          <span class="error" id="error-apellidos"></span>
+        </label>
+
+        <label>Teléfono
+          <input type="text" id="telefono" maxlength="9">
+          <span class="error" id="error-telefono"></span>
+        </label>
+
+        <label>Email
+          <input type="email" id="email">
+          <span class="error" id="error-email"></span>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Presupuesto</legend>
+
+        <label>Producto
+          <select id="producto">
+            <option value="600">Página Básica - 600€</option>
+            <option value="1200">Tienda Online - 1200€</option>
+            <option value="2000">App Web - 2000€</option>
+          </select>
+        </label>
+
+        <label>Plazo (meses)
+          <input type="number" id="plazo" value="12" min="1" max="24">
+        </label>
+
+        <fieldset>
+          <legend>Extras</legend>
+          <label><input type="checkbox" class="extra" value="200"> SEO (+200€)</label>
+          <label><input type="checkbox" class="extra" value="150"> Mantenimiento (+150€)</label>
+          <label><input type="checkbox" class="extra" value="100"> Logotipo (+100€)</label>
+        </fieldset>
+
+        <label>Presupuesto final
+          <input type="text" id="presupuesto-final" readonly>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Condiciones</legend>
+        <label><input type="checkbox" id="condiciones"> Acepto las condiciones</label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Resetear</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-contenido">
+
+    <div>
+      <p>© 2025 Alberto Agis Web</p>
+      <p>Avenida Unión Europea 86</p>
+    </div>
+
+  
+      <a href="aviso-legal.html">Aviso legal</a>
+    </div>
+
+    <div class="social">
+      <img src="../assets/images/facebook.png" alt="Facebook" width="32" height="32">
+      <img src="../assets/images/twitter.jpg" alt="Twitter" width="32" height="32">
+      <img src="../assets/images/inst.jpg" alt="Instagram" width="32" height="32">
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

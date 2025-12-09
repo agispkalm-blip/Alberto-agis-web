@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galería</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+    <div class="logo">Alberto Agis Web</div>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="galeria.html" class="activo">Galería</a></li>
+      <li><a href="presupuesto.html">Presupuesto</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <h2>Carrusel de Imágenes</h2>
+
+    <div class="carrusel">
+      <button id="anterior" aria-label="Imagen anterior">⟨</button>
+
+      <img
+        id="imagen-carrusel"
+        src="../assets/images/img1.jpg"
+        alt="Imagen del carrusel"
+        width="600"
+        height="400"
+        loading="lazy"
+      />
+
+      <button id="siguiente" aria-label="Imagen siguiente">⟩</button>
+    </div>
+  </main>
+
+  <footer>
+  <div class="footer-contenido">
+
+    <div>
+      <p>© 2025 Alberto Agis Web</p>
+      <p>Avenida Unión Europea 86</p>
+    </div>
+
+    <div>
+      <a href="aviso-legal.html">Aviso legal</a>
+    </div>
+
+    <div class="social">
+      <img src="../assets/images/Facebook.png" alt="Facebook" width="32" height="32">
+      <img src="../assets/images/Twitter.jpg" alt="Twitter" width="32" height="32">
+      <img src="../assets/images/Inst.jpg" alt="Instagram" width="32" height="32">
+    </div>
+
+  </div>
+</footer>
+<script src="../js/galeria.js"></script>
+</body>

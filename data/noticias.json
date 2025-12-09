@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Nuevo proyecto de desarrollo web",
+    "fecha": "2025-11-01",
+    "descripcion": "Alberto Agis Web finaliza un nuevo sitio corporativo para una empresa local, usando HTML5, CSS3 y JavaScript moderno."
+  },
+  {
+    "titulo": "Promoción para nuevos clientes",
+    "fecha": "2025-10-15",
+    "descripcion": "Descuento del 20% en el primer proyecto de desarrollo web para nuevos clientes que contacten este mes."
+  },
+  {
+    "titulo": "Actualización del portfolio",
+    "fecha": "2025-09-20",
+    "descripcion": "Se añaden al portfolio nuevos trabajos realizados en aplicaciones web con uso intensivo de JavaScript."
+  }
+]
