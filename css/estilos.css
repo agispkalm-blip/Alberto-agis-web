@@ -22,17 +22,34 @@ main {
   margin: 0 auto;
 }
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+}
 /* ===========================
    CABECERA Y NAVEGACIÓN
    =========================== */
 
 header {
-  position: sticky;     /* La cabecera se queda fija al hacer scroll */
+  position: sticky;     
   top: 0;
   z-index: 1000;
 }
 
-/* Barra de navegación principal */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -42,7 +59,7 @@ header {
   color: #fff;
 }
 
-/* Logotipo o nombre de la empresa */
+/* Logotipo 
 .navbar .logo {
   font-size: 1.4rem;
   font-weight: bold;
@@ -171,71 +188,79 @@ section p {
   transform: scale(1.05);
 }
 
-/* ===========================
-   FORMULARIOS / PRESUPUESTO
+  FORMULARIO / PRESUPUESTO (CORREGIDO)
    =========================== */
 
-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-fieldset {
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-legend {
-  font-weight: bold;
-  padding: 0 5px;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-input,
-select {
+/* Contenedor general centrado */
+main {
   width: 100%;
-  padding: 5px;
-  margin-top: 5px;
-  border-radius: 4px;
+}
+
+/*  ANCHO REAL DEL FORMULARIO */
+#form-presupuesto {
+  max-width: 1200px;   
+  width: 100%;
+  margin: 0 auto;
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Fieldsets bien proporcionados */
+#form-presupuesto fieldset {
   border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 25px;
 }
 
-/* Mensajes de error de validación */
-.error {
-  color: red;
-  font-size: 0.9em;
+/* Labels */
+#form-presupuesto label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
 }
 
-/* Presupuesto final */
+/* Inputs y select */
+#form-presupuesto input,
+#form-presupuesto select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+/* Campo presupuesto final */
 #presupuesto-final {
   font-weight: bold;
   background-color: #eee;
 }
 
-/* Botones del formulario */
-button {
+/* Botones */
+#form-presupuesto button {
   margin-right: 10px;
-  padding: 8px 14px;
-  border-radius: 4px;
+  padding: 10px 18px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
   background-color: #f39c12;
   color: #fff;
   font-weight: bold;
+  font-size: 15px;
 }
 
-button:hover {
+#form-presupuesto button:hover {
   background-color: #d35400;
 }
 
+/* Mensajes de error */
+.error {
+  color: red;
+  font-size: 0.9em;
+}
 /* ===========================
-   MAPA (CONTACTO)
+   MAPA 
    =========================== */
 
 #map {
@@ -275,7 +300,11 @@ footer a {
   height: 24px;
   margin-right: 10px;
 }
-
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 /* ===========================
    GALERÍA DE TRABAJOS
    =========================== */
