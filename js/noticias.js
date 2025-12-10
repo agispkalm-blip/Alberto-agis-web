@@ -1,19 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("datos/noticias.json")
-    .then(r => r.json())
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("data/noticias.json")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("No se pudo cargar el archivo noticias.json");
+      }
+      return response.json();
+    })
     .then(data => {
-      const cont = document.getElementById("contenedor-noticias");
+      const contenedor = document.getElementById("contenedor-noticias");
+
+      // Limpiamos por si acaso
+      contenedor.innerHTML = "";
+
       data.forEach(noticia => {
-        cont.innerHTML += `
-          <article>
-            <h3>${noticia.titulo}</h3>
-            <small>${noticia.fecha}</small>
-            <p>${noticia.descripcion}</p>
-          </article>
+        const div = document.createElement("div");
+        div.innerHTML = `
+          <h3>${noticia.titulo}</h3>
+          <p>${noticia.texto}</p>
+          <small>${noticia.fecha}</small>
         `;
+        contenedor.appendChild(div);
       });
     })
-    .catch(err => {
-      console.error("Error cargando noticias", err);
+    .catch(error => {
+      console.error("ERROR NOTICIAS:", error);
     });
 });
