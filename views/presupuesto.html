@@ -5,7 +5,6 @@
   <title>Alberto Agis Web - Presupuesto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ✅ CSS CORRECTO -->
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -14,7 +13,6 @@
   <nav class="navbar">
     <div class="logo">Alberto Agis Web</div>
     <ul>
-      <!-- ✅ RUTAS DESDE views -->
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="galeria.html">Galería</a></li>
       <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
@@ -33,22 +31,18 @@
 
         <label>Nombre
           <input type="text" id="nombre" maxlength="15">
-          <span class="error" id="error-nombre"></span>
         </label>
 
         <label>Apellidos
           <input type="text" id="apellidos" maxlength="40">
-          <span class="error" id="error-apellidos"></span>
         </label>
 
         <label>Teléfono
           <input type="text" id="telefono" maxlength="9">
-          <span class="error" id="error-telefono"></span>
         </label>
 
         <label>Email
           <input type="email" id="email">
-          <span class="error" id="error-email"></span>
         </label>
       </fieldset>
 
@@ -57,9 +51,10 @@
 
         <label>Producto
           <select id="producto">
-            <option value="600">Página Básica - 600€</option>
-            <option value="1200">Tienda Online - 1200€</option>
-            <option value="2000">App Web - 2000€</option>
+            <option value="">-- Escoge un producto --</option>
+            <option value="600">Página básica - 600€</option>
+            <option value="1200">Tienda online - 1200€</option>
+            <option value="2000">Aplicación web - 2000€</option>
           </select>
         </label>
 
@@ -98,17 +93,20 @@
       <p>Avenida Unión Europea 86</p>
     </div>
 
-  
+    <div>
       <a href="aviso-legal.html">Aviso legal</a>
     </div>
 
     <div class="social">
-      <img src="../assets/images/facebook.png" alt="Facebook" width="32" height="32">
-      <img src="../assets/images/twitter.jpg" alt="Twitter" width="32" height="32">
-      <img src="../assets/images/inst.jpg" alt="Instagram" width="32" height="32">
+      <img src="../assets/images/Facebook.png" alt="Facebook" width="32" height="32">
+      <img src="../assets/images/Twitter.jpg" alt="Twitter" width="32" height="32">
+      <img src="../assets/images/Inst.jpg" alt="Instagram" width="32" height="32">
     </div>
 
   </div>
 </footer>
+
+<!-- JS DEL PRESUPUESTO -->
+<script src="../js/presupuesto.js"></script>
 </body>
 </html>
