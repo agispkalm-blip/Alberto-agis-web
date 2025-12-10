@@ -1,17 +1,27 @@
 [
   {
-    "titulo": "Nuevo proyecto de desarrollo web",
-    "fecha": "2025-11-01",
-    "descripcion": "Alberto Agis Web finaliza un nuevo sitio corporativo para una empresa local, usando HTML5, CSS3 y JavaScript moderno."
+    "titulo": "Nueva web publicada",
+    "texto": "Lanzamos la nueva versión de nuestra web con nuevas funcionalidades y diseño mejorado.",
+    "fecha": "10/03/2025"
   },
   {
-    "titulo": "Promoción para nuevos clientes",
-    "fecha": "2025-10-15",
-    "descripcion": "Descuento del 20% en el primer proyecto de desarrollo web para nuevos clientes que contacten este mes."
+    "titulo": "Nuevo proyecto en desarrollo",
+    "texto": "Estamos trabajando en una nueva aplicación web para un cliente del sector tecnológico.",
+    "fecha": "05/03/2025"
   },
   {
-    "titulo": "Actualización del portfolio",
-    "fecha": "2025-09-20",
-    "descripcion": "Se añaden al portfolio nuevos trabajos realizados en aplicaciones web con uso intensivo de JavaScript."
+    "titulo": "Mejoras en el servicio",
+    "texto": "Hemos mejorado la velocidad y el rendimiento de nuestros sitios web.",
+    "fecha": "01/03/2025"
+  },
+  {
+    "titulo": "Oferta de lanzamiento",
+    "texto": "Durante este mes ofrecemos un 20% de descuento en el desarrollo de páginas web.",
+    "fecha": "25/02/2025"
+  },
+  {
+    "titulo": "Nuevo servicio de mantenimiento",
+    "texto": "Ahora ofrecemos mantenimiento mensual con copias de seguridad automáticas.",
+    "fecha": "15/02/2025"
   }
 ]
